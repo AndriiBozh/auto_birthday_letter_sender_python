@@ -11,6 +11,7 @@ MY_PASSW = "sender's email password"
 now = dt.datetime.now()
 current_date = {'month': now.month, 'day': now.day}
 
+#letter_templates is a folder which contains all letter templates. One of these letters is to be randomly chosen
 random_letter = random.choice(os.listdir('./letter_templates'))
 
 with open(f'./letter_templates/{random_letter}', 'r') as letter_file:
